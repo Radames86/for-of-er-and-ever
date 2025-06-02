@@ -2,6 +2,98 @@
  * YOUR CODE HERE *
  ******************/
 
+const addAll = function(nums){
+  let sum = 0
+  for (const num of nums){
+    sum += num
+  }
+  return sum
+}
+
+
+
+
+const countSpaces = function(str){
+  let count = 0
+  for (const char of str) {
+    if (char === ' ') {
+      count++
+    }
+  }
+  return count
+}
+
+const countTrues = function(arr) {
+  let count = 0
+  for (const val of arr) {
+    if (val === true) {
+      count++
+    }
+  }
+  return count
+}
+
+const makeFriendly = function(paragraph) {
+  let friendly = ''
+  for (const char of paragraph) {
+    if (char === '.') {
+      friendly += '!'
+    } else {
+      friendly += char
+    }
+  }
+  return  friendly
+}
+
+
+  const cubeAll = function(arr){
+    const cubed = []
+   for(const num of arr){
+    cubed.push(num ** 3)
+   }
+   return cubed
+  }
+
+  const addNoises = function(arr) {
+    const result = []
+    for (const  animal of arr) {
+      let noise = ''
+      if (animal === 'Fido' || animal === 'Rolph' || animal === 'Maisie') {
+        noise = 'Woof!'
+      } else if (animal === 'Garfield' || animal === 'Heathcliff') {
+        noise = 'Meow!'
+      } else if (animal === 'Barnie' || animal === 'Sharp Tooth'){
+      noise = "ROWR."
+    }
+    result.push(animal + ' says "' + noise + '"')
+  }
+    return result  
+  }
+
+  const womenOnly = function(arr) {
+    const result = []
+    for (const name of arr){
+      const lastChar = name[name.length -1]
+      if (lastChar === 'F') {
+        result.push(name)
+      }
+    }
+    return result
+  }
+
+  const integersOnly = function(arr) {
+    const result = []
+    for (const num of arr) {
+      if (num % 1 === 0) {
+        result.push(num)
+      }
+    }
+    return result
+  }
+
+
+  
+
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
